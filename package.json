@@ -1,0 +1,31 @@
+{
+  "name": "CoronaTracker",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@ant-design/icons": "4.6.2",
+    "@next/bundle-analyzer": "^10.0.9",
+    "antd": "4.14.1",
+    "axios": "^0.21.1",
+    "cross-env": "^7.0.3",
+    "dayjs": "1.10.4",
+    "esm": "^3.2.25",
+    "next": "latest",
+    "postcss-preset-env": "^6.7.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "styled-components": ""
+  },
+  "devDependencies": {
+    "babel-plugin-styled-components": "^1.12.0"
+  },
+  "browser": {
+    "fs": false,
+    "path": false
+  },
+  "license": "MIT"
+}
