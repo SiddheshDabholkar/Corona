@@ -7,7 +7,7 @@ const { Header } = Layout;
 
 //! Navbar styles starts here
 const StyledHeader = styled(Header)`
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(10px);
   background-color: rgba(178, 60, 253, 0);
   position: fixed;
   display: flex;
@@ -30,13 +30,14 @@ const LeftContainer = styled.div`
   float: left;
   justify-content: flex-start;
 `;
+
 const RightContainer = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
   width: 85%;
   justify-content: flex-end;
-  @media (max-width: 360px) {
+  @media (max-width: 300px) {
     display: none;
   }
 `;
@@ -49,6 +50,11 @@ const LinkContainer = styled.div`
 `;
 
 //! Drawer Styles starts here
+const StyledDrawer = styled(Drawer)`
+  backdrop-filter: blur(7px);
+  background-color: rgba(178, 60, 253, 0);
+`;
+
 const StyledMenuItem = styled(Menu.Item)`
   display: flex;
   justify-content: center;
@@ -87,7 +93,7 @@ export default function SHeader() {
           </LinkContainer>
         </RightContainer>
       </StyledHeader>
-      <Drawer
+      <StyledDrawer
         title="Corona"
         placement="left"
         closable={false}
@@ -111,7 +117,7 @@ export default function SHeader() {
             </Link>
           </StyledMenuItem>
         </Menu>
-      </Drawer>
+      </StyledDrawer>
     </>
   );
 }

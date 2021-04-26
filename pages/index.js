@@ -8,7 +8,7 @@ export default function Home() {
         <title>corona | Home</title>
         <meta name="keywords" content="Home" />
       </Head>
-      <MainContainer auto>
+      <MainContainer>
         <h1>lol</h1>
       </MainContainer>
     </>
