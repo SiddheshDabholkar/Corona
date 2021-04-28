@@ -3,7 +3,7 @@ import Head from "next/head";
 import { MainContainer } from "../Container/MainContainer";
 import { RestContainer } from "../Container/RestContainer";
 import styled from "styled-components";
-import StatsCard from "../Components/Card/NumberCard";
+import StatsCard from "../Components/Card/StatsCard";
 
 const StatsCardContainer = styled.div`
   display: flex;
@@ -12,21 +12,28 @@ const StatsCardContainer = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
+  padding-bottom: 15px;
+  @media (max-width: 550px) {
+    flex-direction: column;
+  }
 `;
 
 export async function getServerSideProps() {
   const res = await fetch("https://covid19.mathdro.id/api/countries/IN");
   const json = await res.json();
+  console.log(json);
   return {
     props: {
       confirmed: json.confirmed.value,
       recovered: json.recovered.value,
       deaths: json.deaths.value,
+      lastUpdate: json.lastUpdate,
     },
   };
 }
 
-export default function Stats({ confirmed, recovered, deaths }) {
+// export default function Stats({ confirmed, recovered, deaths }) {
+export default function Stats(props) {
   return (
     <>
       <Head>
@@ -37,8 +44,7 @@ export default function Stats({ confirmed, recovered, deaths }) {
         <h1>Stats</h1>
         <RestContainer>
           <StatsCardContainer>
-            <StatsCard />
-            <StatsCard />
+            <StatsCard {...props} />
           </StatsCardContainer>
         </RestContainer>
       </MainContainer>
