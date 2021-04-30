@@ -1,6 +1,8 @@
 import React from "react";
 import { Layout } from "antd";
 import styled from "styled-components";
+import { BackTop } from "antd";
+import { UpCircleOutlined } from "@ant-design/icons";
 const { Footer } = Layout;
 
 const StyledFooter = styled(Footer)`
@@ -16,6 +18,11 @@ export default function SFooter() {
     <>
       <StyledFooter>
         <p>Copyright © {new Date().getFullYear()} logo</p>
+        <BackTop>
+          <BackTop>
+            <UpCircleOutlined style={{ fontSize: "30px" }} />
+          </BackTop>
+        </BackTop>
       </StyledFooter>
     </>
   );

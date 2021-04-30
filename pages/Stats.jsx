@@ -13,6 +13,7 @@ const StatsCardContainer = styled.div`
   justify-content: center;
   width: 100%;
   padding-bottom: 15px;
+  padding: 10px;
   @media (max-width: 550px) {
     flex-direction: column;
   }
@@ -21,7 +22,7 @@ const StatsCardContainer = styled.div`
 export async function getServerSideProps() {
   const res = await fetch("https://covid19.mathdro.id/api/countries/IN");
   const json = await res.json();
-  console.log(json);
+  // console.log(json);
   return {
     props: {
       confirmed: json.confirmed.value,
@@ -32,7 +33,6 @@ export async function getServerSideProps() {
   };
 }
 
-// export default function Stats({ confirmed, recovered, deaths }) {
 export default function Stats(props) {
   return (
     <>
