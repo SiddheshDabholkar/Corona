@@ -5,7 +5,6 @@ import { RestContainer } from "../Container/RestContainer";
 import StyledNewsCard from "../Components/Card/NewsCard/StyledNewsCard";
 
 export async function getServerSideProps() {
-  // export async function getInitialProps() {
   const res = await fetch(
     "https://newsapi.org/v2/top-headlines?country=in&category=health&apiKey=b56d801550ae4e9cb277f62626aebea9"
   );
@@ -19,7 +18,6 @@ export async function getServerSideProps() {
 
 export default function News(props) {
   let { articles } = props;
-  // console.log(articles);
   return (
     <>
       <Head>

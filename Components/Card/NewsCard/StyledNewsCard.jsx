@@ -16,7 +16,7 @@ const StyledCardContainer = styled.div`
     width: 24%;
   }
   @media (max-width: 1200px) {
-    width: 45%;
+    width: 46%;
   }
   @media (max-width: 768px) {
     width: 100%;
