@@ -1,9 +1,9 @@
 import React, { useRef, useEffect } from "react";
 import { StyledCard } from "../index";
-import styled from "styled-components";
 import CountUp from "react-countup";
 import lottie from "lottie-web";
 import { SvgContainer } from "../../../Container/svgContainer";
+import styled from "styled-components";
 
 const StyledCardTitle = styled.h1`
   display: flex;

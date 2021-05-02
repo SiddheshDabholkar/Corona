@@ -1,8 +1,25 @@
 import React from "react";
 import Head from "next/head";
 import { MainContainer } from "../Container/MainContainer";
+import { RestContainer } from "../Container/RestContainer";
+import StyledNewsCard from "../Components/Card/NewsCard/StyledNewsCard";
 
-export default function News() {
+export async function getServerSideProps() {
+  // export async function getInitialProps() {
+  const res = await fetch(
+    "https://newsapi.org/v2/top-headlines?country=in&category=health&apiKey=b56d801550ae4e9cb277f62626aebea9"
+  );
+  const json = await res.json();
+  return {
+    props: {
+      articles: json.articles,
+    },
+  };
+}
+
+export default function News(props) {
+  let { articles } = props;
+  // console.log(articles);
   return (
     <>
       <Head>
@@ -11,6 +28,11 @@ export default function News() {
       </Head>
       <MainContainer auto>
         <h1>News</h1>
+        <RestContainer padding wrap row>
+          {articles.map((article) => (
+            <StyledNewsCard {...article} />
+          ))}
+        </RestContainer>
       </MainContainer>
     </>
   );

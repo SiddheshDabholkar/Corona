@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Head from "next/head";
 import { MainContainer } from "../Container/MainContainer";
 import { RestContainer } from "../Container/RestContainer";
@@ -8,12 +8,12 @@ import StatsCard from "../Components/Card/StatsCard";
 const StatsCardContainer = styled.div`
   display: flex;
   flex-direction: row;
-  display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
   padding-bottom: 15px;
   padding: 10px;
+  overflow: hidden;
   @media (max-width: 550px) {
     flex-direction: column;
   }
