@@ -5,7 +5,6 @@ import { RestContainer } from "../Container/RestContainer";
 import styled from "styled-components";
 import StatsCard from "../Components/Card/StatsCard";
 import StyledPie from "../Components/Stats/Pie";
-import StyledLineGraph from "../Components/Stats/LineGraph";
 
 const StatsCardContainer = styled.div`
   display: flex;
@@ -24,7 +23,7 @@ const StatsCardContainer = styled.div`
 export async function getServerSideProps() {
   const res = await fetch("https://covid19.mathdro.id/api/countries/IN");
   const json = await res.json();
-  console.log(json);
+  // console.log(json);
   return {
     props: {
       confirmed: json.confirmed.value,
