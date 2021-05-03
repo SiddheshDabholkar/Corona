@@ -11,6 +11,7 @@ const StyledHeader = styled(Header)`
   background-color: rgba(178, 60, 253, 0);
   position: fixed;
   display: flex;
+  z-index: 1;
   flex-direction: row;
   align-items: center;
   width: 100%;
