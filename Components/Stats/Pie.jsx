@@ -7,7 +7,7 @@ export default function StyledPie({ confirmed, recovered, deaths }) {
     labels: ["Infected", "Recovered", "Deaths"],
     datasets: [
       {
-        label: "total coronavirus cases",
+        label: "daily coronavirus cases",
         data: [confirmed, recovered, deaths],
         backgroundColor: [
           "rgba(255, 237, 0,0.2)",
