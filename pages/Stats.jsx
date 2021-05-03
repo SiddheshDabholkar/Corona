@@ -42,6 +42,7 @@ export default function Stats(props) {
       </Head>
       <MainContainer auto>
         <h1>Stats</h1>
+        <h6>India</h6>
         <RestContainer>
           <StatsCardContainer>
             <StatsCard {...props} />

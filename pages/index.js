@@ -29,32 +29,24 @@ export default function Home() {
         <meta name="keywords" content="Home" />
       </Head>
       <MainContainer auto>
-        <SvgContainer>
+        <SvgContainer small>
           <div className="container" ref={container}></div>
         </SvgContainer>
         <RestContainer padding>
-          <h3>
-            Coronavirus disease (COVID-19) is an infectious disease caused by a
-            newly discovered coronavirus. Most people who fall sick with
-            COVID-19 will experience mild to moderate symptoms and recover
-            without special treatment.
-          </h3>
-          <br />
           <h3>
             <b>HOW IT SPREADS</b>
           </h3>
           <br />
           <h3>
-            The virus that causes COVID-19 is mainly transmitted through
-            droplets generated when an infected person coughs, sneezes, or
-            exhales. These droplets are too heavy to hang in the air, and
-            quickly fall on floors or surfaces.
-          </h3>
-          <br />
-          <h3>
-            You can be infected by breathing in the virus if you are within
-            close proximity of someone who has COVID-19, or by touching a
-            contaminated surface and then your eyes, nose or mouth.
+            <i>
+              The virus that causes COVID-19 is mainly transmitted through
+              droplets generated when an infected person coughs, sneezes, or
+              exhales. These droplets are too heavy to hang in the air, and
+              quickly fall on floors or surfaces. You can be infected by
+              breathing in the virus if you are within close proximity of
+              someone who has COVID-19, or by touching a contaminated surface
+              and then your eyes, nose or mouth.
+            </i>
           </h3>
         </RestContainer>
         <RestContainer padding>

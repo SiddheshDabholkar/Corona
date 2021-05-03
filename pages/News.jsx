@@ -26,6 +26,7 @@ export default function News(props) {
       </Head>
       <MainContainer auto>
         <h1>News</h1>
+        <h6>India</h6>
         <RestContainer padding wrap row>
           {articles.map((article) => (
             <StyledNewsCard {...article} />
