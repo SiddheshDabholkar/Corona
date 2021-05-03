@@ -6,6 +6,6 @@ export const RestContainer = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: ${({ padding }) => (padding ? "10px" : "")};
+  padding: ${({ padding }) => (padding ? "15px" : "")};
   flex-wrap: ${({ wrap }) => (wrap ? "wrap" : "")};
 `;

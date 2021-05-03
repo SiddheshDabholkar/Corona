@@ -15,6 +15,13 @@ export default function Prevention() {
   return (
     <>
       <RestContainer>
+        <h3>
+          Protect yourself and others around you by knowing the facts and taking
+          appropriate precautions. Follow advice provided by your local health
+          authority. To prevent the spread of COVID-19:
+        </h3>
+      </RestContainer>
+      <RestContainer row wrap>
         <TabCard {...PreventionData1} />
         <TabCard {...PreventionData2} />
         <TabCard {...PreventionData3} />

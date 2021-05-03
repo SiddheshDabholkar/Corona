@@ -34,7 +34,7 @@ const NewsCardTitle = styled.h1`
   font-size: 11px;
   font-weight: bolder;
 `;
-const NewsCardPara = styled.p`
+export const NewsCardPara = styled.p`
   display: flex;
   flex-direction: row;
   text-align: center;

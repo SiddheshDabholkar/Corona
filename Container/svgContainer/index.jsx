@@ -7,7 +7,7 @@ export const SvgContainer = styled.div`
   justify-content: center;
   height: ${({ small }) => (small ? "200px" : "auto")};
   width: ${({ small }) => (small ? "150px" : "auto")};
-
+  align-items: center;
   /* @media (max-width: 700px) {
     width: 99%;
   } */
