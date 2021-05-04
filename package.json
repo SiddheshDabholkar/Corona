@@ -17,6 +17,7 @@
     "esm": "^3.2.25",
     "lottie-web": "^5.7.8",
     "next": "latest",
+    "next-pwa": "^5.2.21",
     "postcss-preset-env": "^6.7.0",
     "react": "^17.0.2",
     "react-chartjs-2": "^3.0.3",
